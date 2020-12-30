@@ -1,0 +1,8 @@
+
+import cmath
+
+z = complex(input())
+
+c=cmath.polar(z) 
+for i in c:
+    print(i)
