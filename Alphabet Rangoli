@@ -1,0 +1,18 @@
+#Print the alphabet rangoli in the format.
+
+def print_rangoli(size):
+    # your code goes here
+    c = 'abcdefghijklmnopqrstuvwxyz'[0:size]
+    
+    for i in range(n-1, -n, -1):
+        if (i < 0): 
+            i = (-1) * i; 
+        x=i;
+        
+        if x >= 0:
+            s = c[n:x:-1]+c[x:n]
+            print ("--"*x+ '-'.join(s)+"--"*x)        
+            
+if __name__ == '__main__':
+    n = int(input())
+    print_rangoli(n)
